@@ -51,9 +51,9 @@ body {
   padding: 0;
 }
 
-.nav__item {
+.nav__item:not(:last-child) {
   margin-right: 20px;
-        /}
+}
 
 .nav__link.is-active {
   color: var(--color-blue);
@@ -91,6 +91,7 @@ html {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 51px;
+  margin-bottom: 46px;
 }
 
 @media (min-width: 488px) {
@@ -119,6 +120,9 @@ html {
   background: #fff;
   border-radius: 8px;
   position: relative;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 32px;
 }
 
 .card:hover {
@@ -143,10 +147,9 @@ html {
 }
 
 .card__image {
-  width: 100%;
-  height: auto;
+  width: 160px;
+  height: 134px;
   display: block;
-  border-radius: 6px;
 }
 
 .card__code {
